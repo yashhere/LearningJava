@@ -6,8 +6,8 @@ public class OrderFromJson {
 	@JsonProperty("productId")
 	private int productId;
 
-	@JsonProperty("productQuantity")
-	private int productQuantity;
+	@JsonProperty("productQuntity")
+	private int productQuntity;
 
 	@JsonProperty("productId")
 	public int getProductId() {
@@ -19,14 +19,14 @@ public class OrderFromJson {
 		this.productId = productId;
 	}
 
-	@JsonProperty("productQuantity")
+	@JsonProperty("productQuntity")
 	public int getProductQuantity() {
-		return productQuantity;
+		return productQuntity;
 	}
 
-	@JsonProperty("productQuantity")
-	public void setProductQuantity(int productQuantity) {
-		this.productQuantity = productQuantity;
+	@JsonProperty("productQuntity")
+	public void setProductQuantity(int productQuntity) {
+		this.productQuntity = productQuntity;
 	}
 	
 	

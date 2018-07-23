@@ -18,7 +18,7 @@ public class CustomerDeliveryInformation {
 
 	@JsonProperty("deliveryAddress")
 	private String deliveryAddress;
-	
+
 	@JsonProperty("pincode")
 	private int pincode;
 
@@ -26,14 +26,14 @@ public class CustomerDeliveryInformation {
 	private String email;
 
 	@JsonProperty("orders")
-	private List<OrderFromJson> orderFromJsons = null;
+	public List<OrderFromJson> orderFromJsons = null;
 
 	@JsonIgnore
 	private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-	
+
 	@JsonProperty("couponCode")
 	private String couponCode;
-	
+
 	@JsonProperty("customerId")
 	public int getCustomerId() {
 		return customerId;
@@ -53,7 +53,7 @@ public class CustomerDeliveryInformation {
 	public void setMobileNumber(int mobileNumber) {
 		this.mobileNumber = mobileNumber;
 	}
-	
+
 	@JsonProperty("deliveryAddress")
 	public String getDeliveryAddress() {
 		return deliveryAddress;
@@ -116,9 +116,7 @@ public class CustomerDeliveryInformation {
 	public String toString() {
 		return "CustomerDeliveryInformation [customerId=" + customerId + ", mobileNumber=" + mobileNumber
 				+ ", deliveryAddress=" + deliveryAddress + ", pincode=" + pincode + ", email=" + email
-				+ ", orderFromJsons=" + orderFromJsons + ", couponCode=" + couponCode + ", additionalProperties="
-				+ additionalProperties + "]";
+				+ ", orderFromJsons=" + orderFromJsons + "]";
 	}
 
-	
 }
