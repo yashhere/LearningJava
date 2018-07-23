@@ -1,14 +1,14 @@
 package main.java.api;
-
 import java.util.Date;
 import java.util.List;
+
 
 public class CustomerOrder {
 	private int customerId;
 	private String customerAddress;
 	private int mobileNo;
-	private int pincode;
-	private int orderType;
+	private String pincode;
+	private int orderType;		// Online = 1, offline = 0
 	private String email;
 	private int orderId;
 	private Date orderTime;
@@ -38,11 +38,11 @@ public class CustomerOrder {
 		this.mobileNo = mobileNo;
 	}
 
-	public int getPincode() {
+	public String getPincode() {
 		return pincode;
 	}
 
-	public void setPincode(int pincode) {
+	public void setPincode(String pincode) {
 		this.pincode = pincode;
 	}
 

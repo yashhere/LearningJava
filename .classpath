@@ -22,5 +22,11 @@
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="/home/yash/.local/share/umake/ide/eclipse-jee/plugins/org.junit.jupiter.api_5.1.0.v20180327-1502.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="http://junit.org/junit5/docs/current/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

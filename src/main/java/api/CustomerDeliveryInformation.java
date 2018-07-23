@@ -20,7 +20,7 @@ public class CustomerDeliveryInformation {
 	private String deliveryAddress;
 
 	@JsonProperty("pincode")
-	private int pincode;
+	private String pincode;
 
 	@JsonProperty("email")
 	private String email;
@@ -65,12 +65,12 @@ public class CustomerDeliveryInformation {
 	}
 
 	@JsonProperty("pincode")
-	public int getPincode() {
+	public String getPincode() {
 		return pincode;
 	}
 
 	@JsonProperty("pincode")
-	public void setPincode(int pincode) {
+	public void setPincode(String pincode) {
 		this.pincode = pincode;
 	}
 

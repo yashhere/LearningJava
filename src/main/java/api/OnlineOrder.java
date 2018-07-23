@@ -38,7 +38,8 @@ public class OnlineOrder {
 	public JSONResult getOrderOffline(@FormParam("CustomerDeliveryInformation") String customerDeliveryInformation) {
 		JSONResult result = new JSONResult();
 		OrderController orderController = new OrderController();
-		int hour_now = Calendar.getInstance().get(Calendar.HOUR_OF_DAY);
+		Clock clock = new Clock();
+		int hour_now = clock.getHour();
 		try {
 			if (hour_now < 8 || hour_now > 10) {
 				result = orderController.normalOrders(customerDeliveryInformation, 0);

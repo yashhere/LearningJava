@@ -56,7 +56,7 @@ public class OrderController {
 		CustomerOrder addOrder = new CustomerOrder();
 		if (validUser == true) {
 			if (details.getCouponCode() != null) {
-				if (!(details.getCouponCode().equals("coupon code"))) {
+				if (!(details.getCouponCode().equals("HAPPYJava"))) {
 					result.setStatusCode(HttpStatus.SC_UNAUTHORIZED);
 					result.setMessage("Invalid coupon code.\n");
 					return result;
@@ -108,7 +108,8 @@ public class OrderController {
 		CustomerOrder addOrder = new CustomerOrder();
 		if (validUser == true) {
 			if (details.getCouponCode() != null) {
-				if (details.getCouponCode().equals("coupon code")) {
+				if (details.getCouponCode().equals("HAPPYJava")) {
+					System.out.println("Coupon Code failed");
 					result.setStatusCode(HttpStatus.SC_UNAUTHORIZED);
 					result.setMessage("Invalid coupon code.\n");
 					return result;
