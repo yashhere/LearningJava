@@ -1,4 +1,4 @@
-package test.main.java;
+package main.java.test;
 
 import static org.junit.Assume.assumeFalse;
 import static org.junit.jupiter.api.Assumptions.assumeTrue;
@@ -210,15 +210,6 @@ public class TestOnlineOfflineApi {
 			result = orderController.normalOrders(customerDeliveryInformation, 1);
 			Assertions.assertEquals(200, result.getStatusCode(), "OnlineBooking failed for 10AM onwards.");
 		}		
-	}
-	
-	@Test
-	public void testOfflineBooking() {
-		JSONResult result = new JSONResult();
-		for(String customerDeliveryInformation : offlineOrders) {
-			result = orderController.normalOrders(customerDeliveryInformation, 0);
-			Assertions.assertEquals(200, result.getStatusCode(), "OfflineBooking failed for 10AM onwards.");
-		}
 	}
 	
 	@Test
